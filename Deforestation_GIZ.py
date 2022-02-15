@@ -5,7 +5,8 @@ read_book = xlrd.open_workbook('C:/Users/felipe.jardim/Desktop/Felipe/Dados/Web-
 write_book = copy(read_book) #Make Writeable Copy
 
 write_sheet1 = write_book.get_sheet(1) #Get sheet 1 in writeable copy
-write_sheet1.write(9, 7, 'test') #Write 'test' to cell (B, 11)
+for i in range (20, 25):
+    write_sheet1.write(i, 7, 'test') #Write 'test' to cell (B, 11)
 
 write_sheet2 = write_book.get_sheet(1) #Get sheet 2 in writeable copy
 write_sheet2.write(9, 8, 135) #Write 135 to cell (D, 14)
